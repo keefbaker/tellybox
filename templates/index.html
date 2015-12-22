@@ -1,0 +1,42 @@
+$def with (form, speed_setting, picture, qsize, form2, form3, form4, report)
+<!doctype html>
+<html>
+<head
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<center>
+		<h1>Tellybox Controller</h1>
+	<small>use the <b>extreme limit</b> button if you need to really cramp it</small>
+	<br>
+	<br>
+<img src="/images/$picture" width="256" height="256" >
+<form name="main" method="post"> 
+    $:form.render()
+	  <br>
+    <b>Current settings: $speed_setting</b>
+	<br>
+	<b>Still left to download: $qsize</b>
+	<br>
+	<br>
+	<b>$report</b>
+	<br>
+	<br>
+	<table border="1">
+	<tr>
+	<td>
+    $:form2.render()
+	</td>
+	<td>
+    $:form3.render()
+	</td>
+	</tr>
+	<tr>
+    $:form4.render()
+	</tr>
+	</table>
+	</form>
+</center>
+
+</html>
