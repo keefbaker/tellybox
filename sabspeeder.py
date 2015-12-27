@@ -93,7 +93,7 @@ def grabSettings():
         message = "No Limiting"
     else:
         message = "It's set to %rk, I runno what's going on" % current_setting
-		pic = "noidea.jpg"
+        pic = "noidea.jpg"
     return message, pic, queue_size
 #
 # Set the limited speed from the webform postdata
