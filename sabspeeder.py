@@ -168,7 +168,8 @@ class images:
             "png":"images/png",
             "jpg":"images/jpeg",
             "gif":"images/gif",
-            "ico":"images/x-icon"            }
+            "ico":"images/x-icon",
+            "css":"images/stylesheet"            }
 
         if name in os.listdir('images'): 
             web.header("Content-Type", cType[ext]) 
